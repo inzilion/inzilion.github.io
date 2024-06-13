@@ -3,73 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSLB main page</title>
+    <title>링크 목록</title>
     <style>
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        .website-container {
+        .link-list {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
         }
-        .website {
-            flex-basis: 30%;
-        }
-        .website a {
-            display: block;
-            padding: 10px;
-            background-color: #4f4f50;
-            color: #fff;
-            text-align: center;
+        .link {
             text-decoration: none;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-        }
-        .website a:hover {
-            background-color: #7e7e7f;
-        }
-        .additional-info {
-            margin-top: 20px;
-        }
-        .additional-info h2 {
-            margin-bottom: 10px;
-        }
-        .additional-info ul {
-            list-style-type: decimal;
-            padding-left: 20px;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>정보수업 관련 웹사이트</h1>
-        <div class="website-container">
-            <div class="website"><a href="https://codeup.kr">CodeUp</a></div>
-            <div class="website"><a href="http://playbot.spaceii.com">Playbot</a></div>
-            <div class="website"><a href="https://biko.kr">Biko</a></div>
-        </div>
-        <div class="additional-info">
-            <h2>공지사항</h2>
-            <ul>
-                <li>수행평가 안내</li>
-                <li>컴퓨터실 사용 시 주의사항</li>
-            </ul>
-        </div>
-    </div>
+    <div class="link-list">
+        <div class="link"><a href="https://codeup.kr">CodeUp</a></div>
+        <div class="link"><a href="http://playbot.spaceii.com">Playbot</a></div>
+        <div class="link"><a href="https://biko.kr">Biko</a></div>
+        <div class="link"><a href="https://www.hancomtaja.com/ko">타자연습</a></div>
+</div>
 </body>
 </html>
